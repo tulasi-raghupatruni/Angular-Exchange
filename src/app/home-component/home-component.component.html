@@ -1,0 +1,276 @@
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href= "https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://css-circular-prog-bar.css" rel="stylesheet">
+<link rel="stylesheet" href="https://path/to/morris.css">
+<link href="https://path/to/chartist.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+
+  <br />
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="row" style="justify-content: center;" >
+            <div class="col-sm-2" >
+                <i class="material-icons">blur_circular</i>
+            </div>
+            <div class="col-sm-6" >
+              <b>LOGO</b>
+            </div>
+            <div class="col-sm-4" >
+              <i class="material-icons" >more_horiz</i> 
+            </div>
+        </div>
+         </div>
+        </div>
+        <br/>
+          <div class="row" style="justify-content: center;">
+             <div class="col-sm-12" style="margin-left: 5vw;">
+              <p style="color:black;"><i class="fa fa-plus-circle"></i> New</p>
+             </div>
+          </div>
+          <hr>
+           <div class="row" style="justify-content: center;">
+            <div class="col-sm-12" style="margin-left: 5vw; opacity: 0.6;">
+              <p><i class="fa fa-fw fa-home"></i><b>Home</b></p> 
+            </div>
+            <div class="col-sm-12" style="margin-left: 5vw; opacity: 1;">
+              <p><i class="fa fa-exchange"></i> <b> Exchange</b></p> 
+            </div>
+            <div class="col-sm-12" style="margin-left: 5vw; opacity: 0.6;">
+              <p><i class="fa fa-columns"></i><b> Withdraw</b></p> 
+            </div>
+            <div class="col-sm-12" style="margin-left: 5vw; opacity: 0.6;">
+              <p><i class="fa fa-indent"></i> <b> Deposit</b></p>
+            </div>
+            <div class="col-sm-12" style="margin-left: 5vw; opacity: 0.6;">
+              <p><i class="fa fa-tasks"></i><b> Trading</b></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <i class="material-icons" style="float: right;">add_circle</i>
+              <p class="card-text">Add your mobile</p>
+              <p class="card-text">eg +48 013 403 153</p>
+              <p>&nbsp;</p>
+            </div>
+            <div class="card-footer">
+              Send  <i class="fa fa-arrow-right" style="float: right;" aria-hidden="true"></i>
+            </div>
+          </div>
+      </div>
+
+    <div class="col-sm-7">
+      <div class="card text-center">
+        <div class="card-header">
+          <b>EXCHANGE</b>
+          <i class="material-icons" style="float: left;">search</i>
+          <i class="material-icons" style="float: right;">event_note</i>
+          <i class="material-icons" style="float: right;">timer</i>
+        </div>
+        <div class="card-body" style="height: 85vh;overflow-y:scroll;">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card" id="card1" style="border: none;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm">
+                  <select name="" style="background-color:lightblue">
+                    <option value="EUR">EUR</option>
+                  </select>
+                </div>
+                <div class="col-sm">
+                  <p style="font-size:smaller;">Reset Values</p>
+                </div>
+                <div class="col-sm" >
+                  <i class="material-icons" >more_horiz</i> 
+                </div>
+                </div>
+                 <p style="font-size: 25px;"> <i class="fa fa-eur" aria-hidden="true"></i> 1700.00</p> 
+                  <h6 style="font-size: smaller;">1 USD = 0.876647 EUR</h6>
+              </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" id="card2" style="background-color:lightblue;">
+                <div class="card-body">
+                   <div class="row">
+                    <div class="col-sm">
+                  <select name="" style="background-color: white;">
+                    <option value="USD">USD</option>
+                  </select>
+                </div>
+                <div class="col-sm" >
+                  <i class="material-icons" >more_horiz</i> 
+                </div>
+                </div>
+                <p style="font-size: 25px;"> <i class="fa fa-usd" aria-hidden="true"></i> 1927.28</p> 
+                  <h6 style="font-size: smaller;">1 USD = 0.876647 EUR</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row" style="overflow: hidden;">
+            <div class="col-sm-12">
+              <fusioncharts
+              [width]="width"
+              [type]="type"
+              [dataFormat]="dataFormat"
+              [dataSource]="dataSource"
+              >
+              </fusioncharts>
+            </div>
+          </div>
+         <div class="row">
+           <div class="col-sm-3">
+             <br />
+            <div class="alert alert-warning" role="alert">
+              18 Exchanges
+            </div>
+            <div class="alert alert-info" role="alert" >
+              26 Withdrawls
+            </div>
+           </div>
+           <div class="col-sm-9">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">EUR to USD</th>
+                  <th scope="col">Last 30 days</th>
+                  <th scope="col">Last 90 days</th>
+                  <th scope="col">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td>High</td>
+                  <td>1.15536</td>
+                  <td>1.15536</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i> &nbsp;
+                    <i class="fa fa-file-o" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  
+                  <td>Low</td>
+                  <td>1.3124</td>
+                  <td>1.12245</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i> &nbsp;
+                    <i class="fa fa-file-o" aria-hidden="true"></i>
+                  </td>
+                </tr>
+                <tr>
+
+                  <td>Average</td>
+                  <td>1.14192</td>
+                  <td>1.13839</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i> &nbsp;
+                    <i class="fa fa-file-o" aria-hidden="true"></i></td>
+                </tr>
+              </tbody>
+            </table>
+
+           </div>
+         </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card"  >
+          <div class="card-body">
+           <b>Profile</b> 
+            <i class="material-icons" style="float: right;">add_alert</i>
+          </div>
+        </div>
+        <br/>
+          <div class="row" >
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-8" style="align-items: center;">
+            <img src="{{image}}" alt="Avatar" class="avatar" style="width: 40%; border-radius: 50%;" />
+          </div>
+            <br />
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-9">
+            <p><b>Todd Anderson</b></p>
+            <p style="font-size: small;">todd.anderson@gmail.com</p> 
+            </div>
+          </div>
+            <hr />
+            <div class="row" style="justify-content: center;">
+              <div class="col-sm-6">
+            <p style="font-size: x-small;">TODAY'S VOLUME</p> 
+          </div>
+            <div class="col-sm-6">
+              <i class="material-icons" style="float: right;">more_horiz</i> 
+            </div>
+          </div>
+          <div class="row" style="justify-content: center;">
+          <div class="col-sm-2">
+            <i class="material-icons">add_circle</i>
+          </div>
+            <p style="color:blue">$ 1840.0(10.64%)</p>
+        </div>
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-2">
+            <i class="material-icons">lock_open</i>
+          </div>
+              <p style="font-size:small;">Add phone number to unlock this feature</p>
+            </div>
+          </div>
+        </div >   
+       <br>
+        <div class="card" style="background-color: #8080ff;">
+          <div class="card-header">
+            <div class="row">
+              <div class="col-sm-6" >
+                <i class="fa fa-credit-card fa-2x" aria-hidden="true" style="float: left;"></i>
+              </div>
+              <div class="col-sm-6">
+                <i class="fa fa-cc-visa fa-2x" aria-hidden="true" style="float: right;"></i>
+              </div>
+            </div>
+            </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3" >
+                <p>....</p>
+              </div>
+              <div class="col-sm-3" style="margin: 0;padding: 0;">
+                <p>....</p>
+              </div>
+              <div class="col-sm-3" style="margin: 0;padding: 0;">
+                <p>....</p>
+              </div>
+              <div class="col-sm-3" style="margin: 0;padding: 0;">
+                <p><b>4132</b></p>
+              </div>
+          </div>
+          
+          </div>
+      </div>
+        
+      
+    
+    </div>
+    
+    
+</div>
+  </div>
